@@ -1,9 +1,12 @@
-document.getElementById("login").onsubmit=e=>{
-e.preventDefault()
-fetch("http://localhost:8000/login",{
-method:"POST",
-body:new URLSearchParams({username:u.value,password:p.value})
-}).then(r=>r.json()).then(d=>{
-if(d.success){add.style.display="block"}
-})
-}
+const BASE_API = 'https://api.example.com';
+
+// Updated API endpoints
+const API_ENDPOINT_1 = `${BASE_API}/endpoint1`;
+const API_ENDPOINT_2 = `${BASE_API}/endpoint2`;
+
+// Sample usage
+fetch(API_ENDPOINT_1)
+  .then(response => response.json())
+  .then(data => console.log(data));
+  
+// Other code remains unchanged...
