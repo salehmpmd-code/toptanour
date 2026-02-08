@@ -1,0 +1,7 @@
+body{margin:0;font-family:sans-serif;transition:.4s}
+body.dark{background:#0c0c0c;color:#eee}
+.hero{height:60vh;display:flex;justify-content:center;align-items:center;
+background:linear-gradient(135deg,#000,#333);font-size:3rem}
+#menu{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:2rem;padding:3rem}
+.card{background:#151515;border-radius:20px;padding:1rem;transition:.4s}
+.card:hover{transform:translateY(-10px)}
