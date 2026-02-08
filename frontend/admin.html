@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+<meta charset="UTF-8">
+<title>Admin</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<h2>Admin Panel</h2>
+<form id="login">
+<input id="u" placeholder="username">
+<input id="p" type="password" placeholder="password">
+<button>Login</button>
+</form>
+<form id="add" style="display:none" enctype="multipart/form-data">
+<input name="name" placeholder="name">
+<select name="category">
+<option>Fast Food</option><option>Dessert</option>
+<option>Hot Drink</option><option>Cold Drink</option>
+</select>
+<input name="price" type="number">
+<input name="discount" type="number">
+<input name="image" type="file">
+<button>Add</button>
+</form>
+<script src="js/admin.js"></script>
+</body>
+</html>
